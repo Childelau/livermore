@@ -1,0 +1,27 @@
+<view class="btn">
+    <view class="{{_num==0?'active':''}}" data-index='0' bindtap='toggle'>索赔材料</view>
+    <view class="{{_num==1?'active':''}}" data-index='1' bindtap='toggle'>常见问题</view>
+    <view class="{{_num==2?'active':''}}" data-index='2' bindtap='toggle'>关于我们</view>
+</view>
+
+
+<swiper current="{{_num}}" class="swiper-box" duration="200" bindchange="bindchange" style="min-height: 300px">
+    <!-- 索赔资料 -->
+    <swiper-item>
+        1
+
+
+
+    </swiper-item>
+    <!-- 常见问题 -->
+    <swiper-item>
+        2
+    </swiper-item>
+    <!-- 关于我们 -->
+    <swiper-item>
+    
+        3
+    </swiper-item>
+</swiper>
+
+

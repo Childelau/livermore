@@ -1,0 +1,31 @@
+.btn{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+    background-color: #fff;
+    height:100rpx;
+    font-size: 32rpx;
+    border-top:1px solid #F0F0F0;
+    border-bottom:1px solid #F0F0F0;
+}
+.btn>view{
+    display: flex;
+    align-items: center;
+}
+.active{
+  color: #DF2E26;
+  border-bottom:3px solid #DF2E26;
+}
+
+
+
+
+
+
+
+
+
+
+
+
