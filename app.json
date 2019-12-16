@@ -6,37 +6,38 @@
     "pages/person/person"
   ],
   "window": {
-    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false,
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "selectedColor": "#FFD500",
+    "selectedColor": "#1296db",
     "borderStyle": "black",
     "list": [
       {
         "pagePath": "pages/home/home",
-        "iconPath": "image/index_un.png",
-        "selectedIconPath": "image/index_in.png",
+        "iconPath": "image/home_un.png",
+        "selectedIconPath": "image/home_in.png",
         "text": "首页"
       },
       {
         "pagePath": "pages/query/query",
-        "iconPath": "image/edit_un.png",
-        "selectedIconPath": "image/edit_in.png",
+        "iconPath": "image/query_un.png",
+        "selectedIconPath": "image/query_in.png",
         "text": "进度查询"
       },
       {
         "pagePath": "pages/help/help",
-        "iconPath": "image/msg_un.png",
-        "selectedIconPath": "image/msg_in.png",
+        "iconPath": "image/help_un.png",
+        "selectedIconPath": "image/help_in.png",
         "text": "帮助"
       },
       {
         "pagePath": "pages/person/person",
-        "iconPath": "image/mine_un.png",
-        "selectedIconPath": "image/mine_in.png",
+        "iconPath": "image/person_un.png",
+        "selectedIconPath": "image/person_in.png",
         "text": "我的"
       }
     ]
