@@ -5,13 +5,27 @@
 </view>
 
 
-<swiper current="{{_num}}" class="swiper-box" duration="200" bindchange="bindchange" style="min-height: 300px">
+<swiper current="{{_num}}" class="swiper-box" duration="200" bindchange="bindchange">
     <!-- 索赔资料 -->
     <swiper-item>
-        1
+        <scroll-view scroll-y="true">
+          <view class="fcontent">
+            <view class="title">个人投资者证券索赔材料准备指南</view>
+            <view>尊敬的投资者，您好！请按下列步骤准备材料：</view>
+            <view>1:请携带本人身份证到开户证券营业部:</view>
+            <view>A、打印本人证券账户查询确认单（中登公司）（加盖证券营业部柜台业务章）</view>
+            <view>B、打印需索赔股票该票的历史成交情况表或者历史明细对账单。（加盖证券营业部柜台业务章，多页的需每页盖章）<view class="red">特别提示：对账起始日期必须按照我们提供的起始日期要求,即使某年份区间没有交易记录也需要打印。如果有的证券公司打印的对账单表头上不显示日期区间，需手写上对账起始日期区间并在手写区间上面加盖证券营业部业务章。</view></view>
+            <view>2:把以上完整的交易记录拍照或扫描件发给我们，我们需确认是否符合索赔要求以及计算大致的损失金额并及时反馈用户。</view>
+            <view>3:符合索赔要求的用户，接收我们发出的电子版“维一网股票索赔签字文件（共13页）”并打印出来，按照我们签字范本的要求签署。</view>
+            <view>4:携带本人户口本，身份证原件，<view class="red">去当地公证处办理身份证复印件与原件一致公证书</view>。（部分地区需携带民事起诉状）</view>
+            <view>5:准备本人银行卡复印件一份，用于接收赔偿款。</view>
+
+            <image src="../../image/table.png"></image>
 
 
-
+          </view>
+          
+        </scroll-view>
     </swiper-item>
     <!-- 常见问题 -->
     <swiper-item>

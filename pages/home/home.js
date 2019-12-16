@@ -16,7 +16,10 @@ Page({
 
     },
     bindchange:function(e){
-        console.log(e.detail.current)
+        var that = this;
+        that.setData({
+          _num:e.detail.current
+        })
           
     }
 

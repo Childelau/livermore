@@ -14,9 +14,41 @@
     align-items: center;
 }
 .active{
-  color: #DF2E26;
-  border-bottom:3px solid #DF2E26;
+  color: #1296db;
+  border-bottom:3px solid #1296db;
 }
+.swiper-box{
+  height: 86%;
+}
+page{
+  height: 100%;
+}
+.swiper-box scroll-view{
+  height: 100%;
+}
+
+.swiper-box .title{
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.fcontent{
+  padding: 0 1rem;
+}
+.red{
+  color: red;
+  display: inline;
+}
+.fcontent>view{
+  margin-bottom: 0.6rem;
+}
+.fcontent image{
+  width: 100%;
+}
+
+
+
 
 
 
