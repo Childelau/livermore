@@ -1,0 +1,21 @@
+<view class="page">
+1111
+  <view class="search">
+    <mp-searchbar placeholder="请输入股票代码" bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+  </view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>
