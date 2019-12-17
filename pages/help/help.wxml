@@ -1,0 +1,53 @@
+<view class="btn">
+    <view class="{{_num==0?'active':''}}" data-index='0' bindtap='toggle'>索赔材料</view>
+    <view class="{{_num==1?'active':''}}" data-index='1' bindtap='toggle'>常见问题</view>
+    <view class="{{_num==2?'active':''}}" data-index='2' bindtap='toggle'>关于我们</view>
+</view>
+
+
+<swiper current="{{_num}}" class="swiper-box" duration="200" bindchange="bindchange">
+    <!-- 索赔资料 -->
+    <swiper-item>
+        <scroll-view scroll-y="true">
+          <view class="fcontent">
+            <view class="title">个人投资者证券索赔材料准备指南</view>
+            <view>尊敬的投资者，您好！请按下列步骤准备材料：</view>
+            <view>1:请携带本人身份证到开户证券营业部:</view>
+            <view>A、打印本人证券账户查询确认单（中登公司）（加盖证券营业部柜台业务章）</view>
+            <view>B、打印需索赔股票该票的历史成交情况表或者历史明细对账单。（加盖证券营业部柜台业务章，多页的需每页盖章）<view class="red">特别提示：对账起始日期必须按照我们提供的起始日期要求,即使某年份区间没有交易记录也需要打印。如果有的证券公司打印的对账单表头上不显示日期区间，需手写上对账起始日期区间并在手写区间上面加盖证券营业部业务章。</view></view>
+            <view>2:把以上完整的交易记录拍照或扫描件发给我们，我们需确认是否符合索赔要求以及计算大致的损失金额并及时反馈用户。</view>
+            <view>3:符合索赔要求的用户，接收我们发出的电子版“维一网股票索赔签字文件（共13页）”并打印出来，按照我们签字范本的要求签署。</view>
+            <view>4:携带本人户口本，身份证原件，<view class="red">去当地公证处办理身份证复印件与原件一致公证书</view>。（部分地区需携带民事起诉状）</view>
+            <view>5:准备本人银行卡复印件一份，用于接收赔偿款。</view>
+            <view style="text-align:center">材料明细如下（核对表）：</view>
+            <image src="../../image/table.png"></image>
+            <view>6：把以上核对表中所有材料邮寄我司。</view>
+
+            <view style="margin-top:5rem;">邮寄地址：<view class="uline">江苏江阴市澄江中路5号东都国际大厦12楼1203</view></view>
+            <view>收件人：<view class="uline">徐贤宾</view></view>
+            <view>电话：<view class="uline">13921202888</view></view>
+
+          </view>
+          
+        </scroll-view>
+    </swiper-item>
+    <!-- 常见问题 -->
+    <swiper-item>
+        2
+    </swiper-item>
+    <!-- 关于我们 -->
+    <swiper-item>
+        <scroll-view scroll-y="true">
+            <view class="about">
+                <image src="../../image/logo.jpg"></image>
+                <view>维一网是一家金融法务＋金融中介的互联网信息技术公司，公司聚集金融行业和法律行业最具经验的专业人才，为客户提供优质的证券索赔服务、投融信息服务。在证券索赔领域，我们不是每个标的都接，为避免投资者二次损失，对每一个索赔标的都事先专业评估，只要我们接下的标的，前期所有的维权费用均由我们承担，真正做到客户维权零成本。在投融领域，我们整合市场最前沿的投融信息，提供给客户所需要的资源配置服务和对接服务。客户群体：个人投资者、券商、银行、公募基金、阳光私募、上市公司等。</view>
+                <view>企业宗旨：“让客户得到最佳体验” 企业发展理念：“客户满意是我们最大的成就”</view>
+            
+            </view>
+            
+        </scroll-view>
+        
+    </swiper-item>
+</swiper>
+
+

@@ -1,6 +1,27 @@
 //app.js
 App({
   onLaunch: function () {
+    wx.cloud.init()
+    const db = wx.cloud.database()
+    db.collection('test').get({
+        success:function(res){
+            console.log(res.data)
+        }
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
