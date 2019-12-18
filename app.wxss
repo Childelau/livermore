@@ -1,4 +1,6 @@
 /**app.wxss**/
+@import './weui/weui-wxss/dist/style/weui.wxss';
+
 .container {
   height: 100%;
   display: flex;
@@ -12,3 +14,13 @@
 page{
   height: 100%;
 }
+
+
+
+
+
+
+
+
+
+/*  */

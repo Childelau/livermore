@@ -1,9 +1,15 @@
 <view class="page">
-1111
   <view class="search">
-    <mp-searchbar placeholder="请输入股票代码" bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+    <mp-searchbar placeholder="请输入股票代码" bindselectresult="selectResult" search="{{search}}" ext-class="ss"></mp-searchbar>
   </view>
+  <view class="list" wx:for="{{Array}}">
+    <view class="list-item">
+      {{item['代码']}}
+    </view>
 
+
+  
+  </view>
 
 
 
