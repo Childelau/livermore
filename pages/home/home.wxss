@@ -1,8 +1,4 @@
-.search{
-  height: 10rem;
-}
 .search mp-searchbar{
-  height: 10rem;
   width: 100%;
   display: block;
 }

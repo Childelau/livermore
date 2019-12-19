@@ -3,12 +3,12 @@
     <mp-searchbar placeholder="请输入股票代码" bindselectresult="selectResult" search="{{search}}" ext-class="ss"></mp-searchbar>
   </view>
   <view class="list" wx:for="{{Array}}">
-    <view class="list-item">
-      {{item['代码']}}
-    </view>
 
-
-  
+    <view class="list-name">{{item.name}}</view>
+    <view class="list-code">{{item.code}}</view>
+    <view class="list-date-start">{{item['date-start']}}</view>
+    <view class="list-date-end">{{item['date-end']}}</view>
+    <view class="list-join" id = "{{item.code}}" bindtap="join">加入索赔</view>
   </view>
 
 

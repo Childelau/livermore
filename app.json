@@ -3,7 +3,8 @@
     "pages/home/home",
     "pages/query/query",
     "pages/help/help",
-    "pages/person/person"
+    "pages/person/person",
+    "pages/join/join"
   ],
   "window": {
     "enablePullDownRefresh": false,
