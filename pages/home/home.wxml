@@ -1,3 +1,7 @@
+<!-- 引入wxs脚本 -->
+<wxs src="../../wxs/subutil.wxs" module="tools" />
+
+
 <view class="page">
   <view class="search">
     <mp-searchbar placeholder="请输入股票代码" bindselectresult="selectResult" search="{{search}}" ext-class="ss"></mp-searchbar>
@@ -5,7 +9,7 @@
   <view class="list" wx:for="{{Array}}">
 
     <view class="list-name">{{item.name}}</view>
-    <view class="list-code">{{item.code}}</view>
+    <view class="list-code">{{tools.sub(item.code)}}</view>
     <view class="list-date-start">{{item['date-start']}}</view>
     <view class="list-date-end">{{item['date-end']}}</view>
     <view class="list-join" id = "{{item.code}}" bindtap="join">加入索赔</view>

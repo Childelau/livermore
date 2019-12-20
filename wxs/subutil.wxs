@@ -1,0 +1,7 @@
+var sub = function(val){
+  val = val.slice(1,7)
+  return val
+
+}
+
+module.exports.sub = sub
