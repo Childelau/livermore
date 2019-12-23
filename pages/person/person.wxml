@@ -1,0 +1,8 @@
+<view class="top">
+  <view class="line"></view>
+  <view class="text">个人信息</view>
+</view>
+<view class="info">
+  <view class="photo"></view>
+  <view class="nickname">{{nickname}}</view>
+</view>

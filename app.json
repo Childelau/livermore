@@ -1,9 +1,10 @@
 {
   "pages": [
+    "pages/person/person",
     "pages/home/home",
     "pages/query/query",
     "pages/help/help",
-    "pages/person/person",
+    
     "pages/join/join"
   ],
   "window": {
@@ -18,7 +19,7 @@
     "borderStyle": "black",
     "list": [
       {
-        "pagePath": "pages/home/home",
+        "pagePath": "pages/person/person",
         "iconPath": "image/home_un.png",
         "selectedIconPath": "image/home_in.png",
         "text": "首页"
@@ -36,7 +37,7 @@
         "text": "帮助"
       },
       {
-        "pagePath": "pages/person/person",
+        "pagePath": "pages/home/home",
         "iconPath": "image/person_un.png",
         "selectedIconPath": "image/person_in.png",
         "text": "我的"
