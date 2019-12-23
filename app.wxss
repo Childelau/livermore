@@ -28,7 +28,9 @@ page{
   display: inline;
 }
 
-
+.btnBox{
+  margin-top: 2rem;
+}
 
 
 /*  */

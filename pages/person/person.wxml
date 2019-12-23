@@ -3,6 +3,17 @@
   <view class="text">个人信息</view>
 </view>
 <view class="info">
-  <view class="photo"></view>
+  <image src="{{photoUrl}}" class="photo"></image>
   <view class="nickname">{{nickname}}</view>
+</view>
+<view class="top">
+  <view class="line"></view>
+  <view class="text">我的索赔</view>
+</view>
+
+<view class="btnBox {{isShow}}">
+  <button open-type="getUserInfo" bindgetuserinfo="login" type="primary">
+  请允许授权登录
+  </button>
+  <!-- <view class="btn">请允许授权登录</view> -->
 </view>

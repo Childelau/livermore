@@ -14,5 +14,59 @@
 	background-color: #2B91D5;
 	margin-right: 10px;
 }
-.text{
+.photo{
+  width: 3.4rem;
+  height: 3.4rem;
 }
+.nickname{
+  margin: 1rem 1rem;
+}
+.info{
+  padding: 20px;
+  display: flex;
+}
+
+
+.btnBox{
+	box-sizing: border-box;
+	padding: 0 10px;
+}
+.btn{
+	background-color: #2B91D5;
+	color: white;
+	padding: 0 10px;
+	height: 36px;
+	margin-top: 20px;
+	line-height: 36px;
+	text-align: center;
+	border-radius: 18px;
+	box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
