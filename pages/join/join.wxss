@@ -1,0 +1,182 @@
+.top{
+	height: 3rem;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	border-bottom: 1px lightgray solid;
+}
+.top > view{
+	font-size: 14px;
+	display: flex;
+	padding: 10px 0;
+}
+.line{
+	margin-left: 10px;
+	width: 5px;height: 20px;
+	background-color: #2B91D5;
+	margin-right: 10px;
+}
+.code{
+	margin-right: 6px;
+}
+
+.step{
+	align-content: flex-end;
+	margin-right: 10px;
+}
+
+.info{
+	font-size: 14px;
+	padding: 10px 10px;
+	margin-bottom: 20px;
+}
+
+.middle{
+	padding: 0 10px 10px 10px;
+	font-size: 14px;
+	line-height: 2em;
+	border-bottom: 1px lightgray solid;
+}
+.middle .title{
+	font-size: 18px;
+}
+.middle{
+	border-bottom: 1px lightgray solid;
+
+}
+.name,.tel{
+	display: flex;
+	padding: 12px 0;
+}
+.lline{
+	height: 1px;
+	background-color: lightgray;
+}
+.btnBox{
+	box-sizing: border-box;
+	padding: 0 10px;
+}
+.btn{
+	background-color: #2B91D5;
+	color: white;
+	padding: 0 10px;
+	height: 36px;
+	margin-top: 20px;
+	line-height: 36px;
+	text-align: center;
+	border-radius: 18px;
+	box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.red{
+	color: red;
+	font-size: 14px;
+	padding: 6px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/

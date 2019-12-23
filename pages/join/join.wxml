@@ -1,1 +1,81 @@
-<view>11111111</view>
+
+
+<view class="top">
+  <view>
+    <view class="line"></view>
+    <view class="">{{name}}</view>
+    <view class="code">{{code}}</view>
+    <view>索赔征集</view>
+  </view>
+  
+  <view class="step">正式起诉阶段</view>
+</view>
+<!-- 企业信息 -->
+<view class="info">
+  2016年3月22日至2017年4月18日之间有买入，并且在2017年4月18日
+  收盘未清仓的受损投资者
+</view>
+<!-- middle -->
+<view class="middle">
+  <view class="title">江阴市维一网</view>
+  <view>联系方式</view>
+  <view>电话：13921202888</view>
+  <view>邮寄地址：江苏江阴市澄江中路5号东都国际大厦12楼1203室</view>
+  <view>联系人/收件人：徐贤宾</view>
+</view>
+
+<!-- bottom -->
+<view class="bottom">
+  <view class="name">
+    <view class="line"></view>
+    <view class="xx">姓名：</view>
+    <input type="text" placeholder="请输入您的姓名" maxlength="4"></input>
+  </view>
+  <view class="lline"></view>
+  <view class="tel">
+    <view class="line"></view>
+    <view class="xx">电话：</view>
+    <input type="number" placeholder="请输入您的手机号码" maxlength="11"></input>
+  </view>
+  <view class="lline"></view>
+  <view class="red">填写预留信息，我们会尽快联系你</view>
+  <view class="btnBox" bindtap="ref">
+    <view class="btn">提交加入索赔</view>
+  </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

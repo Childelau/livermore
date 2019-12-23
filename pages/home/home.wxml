@@ -4,18 +4,45 @@
 
 <view class="page">
   <view class="search">
-    <mp-searchbar placeholder="请输入股票代码" bindselectresult="selectResult" search="{{search}}" ext-class="ss"></mp-searchbar>
+    <view class="weui-search-bar {{extClass}}">
+    <view class="weui-search-bar__form">
+        <view class="weui-search-bar__box">
+            <icon class="weui-icon-search_in-box" type="search" size="20"></icon>
+            <input type="text" class="weui-search-bar__input" placeholder="请输入股票代码" maxlength="6" bindconfirm="listSearch" value="{{value}}"/>
+        </view>
+    </view>
+  
   </view>
-  <view class="list" wx:for="{{Array}}">
-
-    <view class="list-name">{{item.name}}</view>
-    <view class="list-code">{{tools.sub(item.code)}}</view>
-    <view class="list-date-start">{{item['date-start']}}</view>
-    <view class="list-date-end">{{item['date-end']}}</view>
-    <view class="list-join" id = "{{item.code}}" bindtap="join">加入索赔</view>
   </view>
+  <view class="listBox {{listBoxClass}}">
+    <view class="list" wx:for="{{Array}}" wx:key="useless" bindtap="join" id = "{{item.code}}">
+      <view class="list-name">{{item.name}}</view>
+      <view class="list-code">{{tools.sub(item.code)}}</view>
+      <view class="list-step">
+        正式起诉阶段
+      </view>
+      <view class="list-date-start">{{item['date1']}}</view>
+      <view class="list-date-end">{{item['date2']}}</view>
+      <view class="list-join">加入索赔</view>
+    </view>
+  </view>
+  
 
-
+  <view class="checkBox {{checkBoxClass}}" id="{{idName}}" >
+    <view class="back" bindtap="backFunc">
+      点击查看<view class="wenzi w2">全部</view>
+    </view>
+    <view class="list" wx:for="{{checkArray}}" wx:key="useless" bindtap="join" id = "{{item.code}}">
+      <view class="list-name">{{item.name}}</view>
+      <view class="list-code">{{tools.sub(item.code)}}</view>
+      <view class="list-step">
+        正式起诉阶段
+      </view>
+      <view class="list-date-start">{{item['date1']}}</view>
+      <view class="list-date-end">{{item['date2']}}</view>
+      <view class="list-join">加入索赔</view>
+    </view>
+  </view>
 
 
 

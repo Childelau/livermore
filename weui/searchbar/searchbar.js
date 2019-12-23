@@ -129,6 +129,14 @@ Component({
         cancel: {
             type: Boolean,
             value: true
+        },
+        maxlength:{
+          type:String,
+          value:"2"
+        },
+        bindconfirm:{
+          type:Function,
+          value:null
         }
     },
     data: {
@@ -197,7 +205,6 @@ Component({
         },
         selectResult: function selectResult(e) {
             var index = e.currentTarget.dataset.index;
-
             var item = this.data.result[index];
             this.triggerEvent('selectresult', { index: index, item: item });
         }
