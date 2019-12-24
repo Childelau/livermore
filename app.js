@@ -15,19 +15,25 @@ App({
 
   },
   onShow: function(){
+    wx.cloud.init()
     var that = this
     //检测是否已经登陆
     var js_code = null
     wx.checkSession({
       success() {
-
+        var openId = null
         wx.login({
           success(res) {
-            console.log(res.code)
-            js_code = res.code
+           
           }
         })
-
+        wx.cloud.callFunction({
+          name: 'add'
+        }).then(res => {
+          console
+          openId = res.result.OPENID
+          console.log(openId)
+        })
 
         console.log('登陆成功')
         that.globalData.isShow = 'hide'
@@ -43,12 +49,7 @@ App({
                   that.globalData.nickname = res.userInfo.nickName
                   that.globalData.photoUrl = res.userInfo.avatarUrl
                   //
-                  wx.request({
-                    // url: 'https://api.weixin.qq.com/sns/jscode2session?appid=wxcd981428b721e6d3&secret=c1cc21eeaaf44beea4dcf57df50267f1&' + js_code + '=JSCODE&grant_type=authorization_code',
-                    // success(res){
-                    //   console.log(res.data)
-                    // }
-                  })
+               
 
 
                   //
