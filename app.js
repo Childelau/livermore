@@ -1,10 +1,6 @@
 //app.js
 App({
   onLaunch: function () {
-
-
-
-
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -18,19 +14,13 @@ App({
     wx.cloud.init()
     var that = this
     //检测是否已经登陆
-    var js_code = null
     wx.checkSession({
       success() {
         var openId = null
-        wx.login({
-          success(res) {
-           
-          }
-        })
+       
         wx.cloud.callFunction({
           name: 'add'
         }).then(res => {
-          console
           openId = res.result.OPENID
           console.log(openId)
         })
@@ -44,15 +34,10 @@ App({
               // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
               wx.getUserInfo({
                 success: res => {
-                  // 可以将 res 发送给后台解码出 unionId
-                  console.log(res.userInfo)
                   that.globalData.nickname = res.userInfo.nickName
                   that.globalData.photoUrl = res.userInfo.avatarUrl
                   //
                
-
-
-                  //
                   if (that.userInfoReadyCallback) {
                     that.userInfoReadyCallback(res)
                   }
@@ -64,11 +49,11 @@ App({
       },
       fail() {
         // wx.switchTab({
-        //   url: '/pages/help/help',
+        //   url: '/pages/person/person',
         // })
+      
 
-
-        console.log(222)
+        console.log('登录失败')
       }
     })
   },

@@ -19,13 +19,13 @@
     "borderStyle": "black",
     "list": [
       {
-        "pagePath": "pages/person/person",
+        "pagePath": "pages/query/query",
         "iconPath": "image/home_un.png",
         "selectedIconPath": "image/home_in.png",
         "text": "首页"
       },
       {
-        "pagePath": "pages/query/query",
+        "pagePath": "pages/home/home",
         "iconPath": "image/query_un.png",
         "selectedIconPath": "image/query_in.png",
         "text": "进度查询"
@@ -37,7 +37,7 @@
         "text": "帮助"
       },
       {
-        "pagePath": "pages/home/home",
+        "pagePath": "pages/person/person",
         "iconPath": "image/person_un.png",
         "selectedIconPath": "image/person_in.png",
         "text": "我的"
