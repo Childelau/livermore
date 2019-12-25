@@ -29,13 +29,13 @@
   <view class="name">
     <view class="line"></view>
     <view class="xx">姓名：</view>
-    <input type="text" placeholder="请输入您的姓名" maxlength="4"></input>
+    <input type="text" placeholder="请输入您的姓名" maxlength="4" bindblur="onblur1" value="{{value1}}"></input>
   </view>
   <view class="lline"></view>
   <view class="tel">
     <view class="line"></view>
     <view class="xx">电话：</view>
-    <input type="number" placeholder="请输入您的手机号码" maxlength="11"></input>
+    <input type="number" placeholder="请输入您的手机号码" maxlength="11" bindblur="onblur2" value="{{value2}}"></input>
   </view>
   <view class="lline"></view>
   <view class="red">填写预留信息，我们会尽快联系你</view>

@@ -36,7 +36,7 @@ App({
                 success: res => {
                   that.globalData.nickname = res.userInfo.nickName
                   that.globalData.photoUrl = res.userInfo.avatarUrl
-                  //
+                  that.globalData.openId = openId
                
                   if (that.userInfoReadyCallback) {
                     that.userInfoReadyCallback(res)
@@ -61,5 +61,6 @@ App({
     isShow:'show',
     nickname:'未登陆请先登录',
     photoUrl: '../../image/touxiang.png',
+    openId:''
   }
 })

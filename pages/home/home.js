@@ -49,6 +49,12 @@ Page({
         if(!data.length){
           wx.showModal({
             title: '未检索到该与该股票相关信息',
+            showCancel:false,
+            complete:function(){
+              that.setData({
+                value:''
+              })
+            }
           })
         }else{
           // 显示检索结果

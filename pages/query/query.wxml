@@ -9,6 +9,14 @@
   <view bindtap="search">查询数据</view>
 </view>
 
+<view class="title5">
+  <view class="list" wx:for="{{Array}}" wx:key="useless">
+    <view class="sName">{{item.sName}}</view>
+    <view class="code">{{item.code}}</view>
+    <view class="name">{{item.name}}</view>
+  </view>
+</view>
+
 
 
 

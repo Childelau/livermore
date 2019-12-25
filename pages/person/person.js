@@ -24,7 +24,6 @@ Page({
     wx.cloud.callFunction({
       name:'add'
     }).then(res=>{
-      console.log(res.result)
       openId = res.result.OPENID
       console.log(openId)
     })
@@ -49,6 +48,8 @@ Page({
                 photoUrl: res.userInfo.avatarUrl,
                 isShow: 'hide'
               })
+              getApp().globalData.openId = openId
+
 
               if (this.userInfoReadyCallback) {
                 this.userInfoReadyCallback(res)

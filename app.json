@@ -19,13 +19,13 @@
     "borderStyle": "black",
     "list": [
       {
-        "pagePath": "pages/query/query",
+        "pagePath": "pages/home/home",
         "iconPath": "image/home_un.png",
         "selectedIconPath": "image/home_in.png",
         "text": "首页"
       },
       {
-        "pagePath": "pages/home/home",
+        "pagePath": "pages/query/query",
         "iconPath": "image/query_un.png",
         "selectedIconPath": "image/query_in.png",
         "text": "进度查询"
