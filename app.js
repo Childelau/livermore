@@ -5,7 +5,6 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
     
 
 
@@ -61,6 +60,7 @@ App({
     isShow:'show',
     nickname:'未登陆请先登录',
     photoUrl: '../../image/touxiang.png',
-    openId:''
+    openId:'',
+    accessToken:''
   }
 })

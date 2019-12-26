@@ -34,12 +34,43 @@
   border-radius: 6px;
   letter-spacing: 2px;
 }
+.title5{
+  padding: 10px 8px;
+}
+.list{
+	border: 1px lightgray solid;
+	border-radius: 6px;
+	margin-bottom: 10px;
+	box-shadow: 1px -1px 2px #EEEEEE;
+	display: flex;
+	padding: 8px 8px 40px 8px;
+	font-size: 14px;
+	align-items: baseline;
+	flex-wrap: wrap;
+	position: relative;
+}
+.sName,
+.code,
+.name{
+  color: #006699;
+  margin-right: 6px;
+  font-size: 16px;
+}
 
-
-
-
-
-
+.add{
+  background-color:  #006699;
+	color: white;
+	padding: 2px 12px;
+	border-radius: 16px;
+	position: absolute;
+	right: 8px;bottom: 8px;
+}
+.progress{
+  display: block;
+  width: 100%;
+  word-break: break-all;
+  margin-top: 6px;
+}
 
 
 

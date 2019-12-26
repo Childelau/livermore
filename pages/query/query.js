@@ -1,6 +1,8 @@
+var app = getApp()
 Page({
   data:{
-    value:''
+    value:'',
+    claaName:''
   },
   onLoad:function(){
     
@@ -44,7 +46,21 @@ Page({
       }
       
     })
-
+  },
+  addList:function(e){
+    var _openid = app.globalData.openId
+    console.log(_openid)
+    var _id = e.currentTarget.id
+    
+    wx.cloud.callFunction({
+      name:'access',
+      data:{
+        id: _id,
+        openId: _openid
+        
+      }
+    })
+    
 
   }
 })
