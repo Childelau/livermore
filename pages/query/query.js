@@ -16,7 +16,7 @@ Page({
   },
   search:function(){
     var that = this
-    var val = parseInt(this.data.value) 
+    var val = '!' + this.data.value
     console.log(val)
     wx.cloud.init()
     const db = wx.cloud.database()

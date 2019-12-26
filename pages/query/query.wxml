@@ -1,3 +1,6 @@
+<!-- 引入wxs脚本 -->
+<wxs src="../../wxs/subutil.wxs" module="tools" />
+
 <view class="title1">索赔进度查询</view>
 <view class="title2">查询条件</view>
 <view class="title3">
@@ -9,15 +12,24 @@
   <view bindtap="search">查询数据</view>
 </view>
 
-<view class="title5">
+<!-- <view class="title5">
   <view class="list" wx:for="{{Array}}" wx:key="useless">
     <view class="sName">{{item.sName}}</view>
-    <view class="code">{{item.code}}</view>
+    <view class="code">{{tools.sub(item.code)}}</view>
     <view class="name">{{item.name}}</view>
   </view>
+</view> -->
+
+<view class="title5">
+  <view class="list">
+    <view class="sName">jp摩根</view>
+    <view class="code">601010</view>
+    <view class="name">坤坤</view>
+    <view class="address">江阴市xx证券营业部</view>
+    <view class="progress">60%</view>
+    <view class="add">添加至个人列表</view>
+  </view>
 </view>
-
-
 
 
 

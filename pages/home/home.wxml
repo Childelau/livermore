@@ -21,8 +21,7 @@
       <view class="list-step">
         正式起诉阶段
       </view>
-      <view class="list-date-start">{{item['date1']}}</view>
-      <view class="list-date-end">{{item['date2']}}</view>
+      <view class="list-require">要求：{{item.require}}</view>
       <view class="list-join">加入索赔</view>
     </view>
   </view>
@@ -38,8 +37,7 @@
       <view class="list-step">
         正式起诉阶段
       </view>
-      <view class="list-date-start">{{item['date1']}}</view>
-      <view class="list-date-end">{{item['date2']}}</view>
+      <view class="list-require">要求：{{item.require}}</view>
       <view class="list-join">加入索赔</view>
     </view>
   </view>

@@ -15,7 +15,7 @@
 	margin-bottom: 10px;
 	box-shadow: 1px -1px 2px #EEEEEE;
 	display: flex;
-	padding: 8px 8px 46px 8px;
+	padding: 8px 8px 40px 8px;
 	font-size: 14px;
 	align-items: baseline;
 	flex-wrap: wrap;
@@ -48,6 +48,13 @@
 	position: absolute;
 	right: 8px;top: 8px;
 }
+.list-require{
+  margin-top: 6px;
+  display: block;
+  width: 100%;
+  word-break: break-all;
+}
+
 
 /* searchbar */
 .weui-search-bar__form{
