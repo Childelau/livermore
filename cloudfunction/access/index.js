@@ -5,7 +5,6 @@ cloud.init()
 
 const db = cloud.database()
 const _ = db.command
-console.log(111111)
 //云函数入口
 exports.main = async(event, context) => {
   try{

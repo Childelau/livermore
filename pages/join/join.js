@@ -35,20 +35,23 @@ Page({
   },
   onblur1:function(e){
     this.setData({
-      value1: e.detail.value1
+      value1: e.detail.value
     })
   },
   onblur2:function(e){
     this.setData({
-      value2:e.detail.value2
+      value2:e.detail.value
     })
   },
   ref:function(){
-    wx.cloud.init()
-    const db = wx.cloud.database()
-    var openId = app.global.openId
+    var that = this
+    var openId = app.globalData.openId
+    var name = that.data.name
+    var tCode = that.data.tCode
+    var value1 = that.data.value1
+    var value2 = that.data.value2
     //验证输入
-    if(value1=''){
+    if(value1==''){
       wx.showModal({
         title: '请输入姓名',
         showCancel:false
@@ -64,8 +67,30 @@ Page({
       return false
     }
     //上传信息
-    
-
+    wx.cloud.callFunction({
+      name: 'join',
+      data:{
+        name: name,
+        code: tCode,
+        userName: value1,
+        userTel: value2,
+        openId: openId
+      }
+    }).then(res => {
+      var that = this
+      wx.showModal({
+        title: '您已提交成功',
+        showCancel: false,
+        success(res){
+          if (res.confirm){
+            that.setData({
+              value1:'',
+              value2:''
+            })
+          }
+        }
+      })
+    })
 
 
 
