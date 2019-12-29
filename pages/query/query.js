@@ -2,11 +2,10 @@ var app = getApp()
 Page({
   data:{
     value:'',
-    claaName:''
+    claaName:'',
+
   },
   onLoad:function(){
-    
-
 
 
 
@@ -49,17 +48,41 @@ Page({
   },
   addList:function(e){
     var _openid = app.globalData.openId
-    console.log(_openid)
-    var _id = e.currentTarget.id
-    
-    wx.cloud.callFunction({
-      name:'access',
-      data:{
-        id: _id,
-        openId: _openid
+    var new_id = e.currentTarget.id
+    console.log(_openid,new_id)
+    //判断是否重复添加
+    wx.cloud.init()
+    const db = wx.cloud.database()
+    db.collection('userInfo').where({
+      openId: _openid,
+      new_id: new_id
+    }).get({
+      success:function(res){
+        console.log(res)
+        var res = res.data
         
+        if(res.length==0){
+          //core code
+          wx.cloud.callFunction({
+            name: 'access',
+            data: {
+              openId: _openid,
+              new_id: new_id
+            }
+          })
+        }else{
+          wx.showModal({
+            title: '已经存在请勿重复添加',
+            showCancel: false
+          })
+        }
       }
+
+      
     })
+
+
+   
     
 
   }

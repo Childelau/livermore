@@ -4,7 +4,7 @@
 <view class="title1">索赔进度查询</view>
 <view class="title2">查询条件</view>
 <view class="title3">
-  <input type="idcard" bindconfirm="search" maxlength="18" placeholder="请输入身份证号码" value="{{value}}" bindinput="onblur">
+  <input type="idcard" bindconfirm="search" maxlength="18" placeholder="请输入身份证号码" value="{{value}}" bindblur="onblur">
   </input>
 </view>
 

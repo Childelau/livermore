@@ -10,6 +10,16 @@
   <view class="line"></view>
   <view class="text">我的索赔</view>
 </view>
+ <scroll-view class="showList {{isScrollShow}}">
+    <view class="myList {{item._id}}" wx:for="{{myList}}" wx:key="item" id="{{item._id}}">
+      <view class="">股票名称：{{item.sName}}</view>
+      <view class="">姓名：{{item.name}}</view>
+      <view class="">案件进程：{{item.progress}}</view>
+      <view class="del" data-index="{{index}}|" id="{{item._id}}" bindtap="del">删除此关注</view>
+    </view>
+  
+  
+  </scroll-view>
 
 <view class="btnBox {{isShow}}">
   <button open-type="getUserInfo" bindgetuserinfo="login" type="primary">

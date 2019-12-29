@@ -8,9 +8,10 @@ const _ = db.command
 //云函数入口
 exports.main = async(event, context) => {
   try{
-    return await db.collection('search_list').doc(event.id).update({
+    return await db.collection('userInfo').add({
       data:{
-        openid:event.openId
+        openId: event.openId,
+        new_id: event.new_id,
       }
     })
   }catch(e){
