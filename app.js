@@ -5,7 +5,13 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-    
+    //++++++
+    // wx.removeStorage({
+    //   key: 'success',
+    //   success(res) {
+    //     console.log(res)
+    //   }
+    // })
 
 
   },
@@ -86,6 +92,10 @@ App({
         // wx.switchTab({
         //   url: '/pages/person/person',
         // })
+        wx.setStorage({
+          key: 'success',
+          data: 'n',
+        })
         console.log('登录失败')
       }
     })
