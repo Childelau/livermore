@@ -44,6 +44,8 @@ Page({
             })
 
           }
+        }else{
+          //===================================================
         }
       }
     })
@@ -52,12 +54,14 @@ Page({
     console.log(e)
     //删除数据库中相应的数据
     let dbId = e.target.id
-    wx.cloud.init()
-    const db = wx.cloud.database()
 
-    db.collection('userInfo').where({
-      new_id: dbId
-    }).remove()
+    wx.cloud.callFunction({
+      name: 'delUserInfo',
+      data: {
+        new_id: dbId
+      }
+    })
+    
 
 
     //删除相应的view组建
