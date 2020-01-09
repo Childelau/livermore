@@ -13,8 +13,8 @@ Page({
     wx.getStorage({
       key: 'success',
       success: function(res) {
-        if(res.data == 'yyyyy'){
-          console.log('y')
+        console.log(res)
+        if(res.data == 'y'){
           var timer, isShow, photoUrl, myList, isScrollShow,nickname = null
           function test(){
             nickname = app.globalData.nickname
@@ -63,9 +63,28 @@ Page({
             isScrollShow: isScrollShow
           })
         }
+      },
+      fail:function(){
+        console.log('nnnn111')
+        //===================================================
+        var timer, isShow, photoUrl, myList, isScrollShow, nickname = null
+        nickname = app.globalData.nickname
+        isShow = app.globalData.isShow
+        photoUrl = app.globalData.photoUrl
+        myList = app.globalData.myList
+        isScrollShow = app.globalData.isScrollShow
+        console.log(isShow, photoUrl, myList, isScrollShow)
+        that.setData({
+          isShow: isShow,
+          photoUrl: photoUrl,
+          nickname: nickname,
+          myList: myList,
+          isScrollShow: isScrollShow
+        })
       }
     })
   },
+  //==========================================================================
   //删除我的索赔列表函数================================
   del:function(e){
     console.log(e)
@@ -95,7 +114,7 @@ Page({
       })
     }
   },
-
+//===============================================================================
 //未直接登录点击登录按钮函数==================================
   login:function(){
     var openId = null;
@@ -111,8 +130,7 @@ Page({
     var js_code = ''
     wx.login({
       success(res){
-        console.log(res.code)
-        js_code = res.code
+        console.log('login函数执行成功')
       }
     })
     wx.getSetting({
@@ -149,7 +167,9 @@ Page({
                   }).get({
                     success: function (res) {
                       console.log(res.data)
-                      that.data.myList = res.data
+                      that.setData({
+                        myList: res.data
+                      })
                     }
                   })
 

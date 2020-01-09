@@ -89,14 +89,14 @@ App({
         })
       },
       fail() {
-        // wx.switchTab({
-        //   url: '/pages/person/person',
-        // })
         wx.setStorage({
           key: 'success',
           data: 'n',
         })
         console.log('登录失败')
+        wx.switchTab({
+          url: '/pages/person/person',
+        })
       }
     })
   },
